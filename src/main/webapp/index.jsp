@@ -2,63 +2,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sesion03</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bienvenido al Sistema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="home">Sistema de Reservas</a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="servicios">Servicios</a></li>
+        </ul>
+    </nav>
 
-       <div class="container mt-5">
-         <div class="jumbotron p-5 text-center bg-primary text-white rounded">
-         <h1>Bienvenido al sistema de reservas</h1>
-         </div>
+    <!-- Contenido Principal -->
+    <div class="container mt-5">
+        <!-- Banner -->
+        <div class="jumbotron text-center bg-primary text-white p-5 rounded">
+            <h1 class="display-4">¡Bienvenido al Sistema de Reservas!</h1>
+            <p class="lead">Administra tus servicios y realiza reservas de manera rápida y sencilla.</p>
+            <a href="servicios" class="btn btn-light btn-lg">Ver Servicios</a>
+        </div>
 
-         <div class="row mt-5">
-             <div class="row mt-5">
-                  <div class="col-md-4">
-                       <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-tittle">Servicios Dinámicos</h5>
-                                <p class="card-text">
-                                Explorar nuestra lista de servicios dinámicos y selecciona los que necesites
-                               </p>
-                                  <a href="./" class="btn btn-primary">Explorar</a>
-                               </div>
-                       </div>
-
-                  </div>
-
-          <div class="col-md-4">
-                        <div class="card">
-                             <div class="card-body">
-                                 <h5 class="card-tittle">Reservas</h5>
-                                 <p class="card-text">
-                                 Realiza las reservas de productos
-                                </p>
-                                   <a href="./" class="btn btn-primary">Explorar</a>
-                                </div>
-                        </div>
-
-                   </div>
-
-                 <div class="col-md-4">
-                       <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-tittle">Resumen</h5>
-                                <p class="card-text">
-                                Aquí podrás ver el resumen de tus reservas realizadas
-                               </p>
-                                  <a href="./" class="btn btn-primary">Explorar</a>
-                               </div>
-                       </div>
-
-                  </div>
-
-              </div>
-         </div>
-
-
-
+        <!-- Características del Sistema -->
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Servicios Dinámicos</h5>
+                        <p class="card-text">Explora nuestra lista de servicios disponibles y selecciona los que necesitas.</p>
+                        <a href="servicios" class="btn btn-primary">Explorar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Reservas Fáciles</h5>
+                        <p class="card-text">Realiza reservas seleccionando tus servicios favoritos con fechas específicas.</p>
+                        <a href="reserva.jsp" class="btn btn-primary">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Resumen de Cotización</h5>
+                        <p class="card-text">Calcula el costo total de tus servicios seleccionados en segundos.</p>
+                        <a href="cotizacion" class="btn btn-primary">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
